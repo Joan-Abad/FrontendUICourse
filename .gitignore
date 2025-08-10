@@ -1,0 +1,146 @@
+# Ignore all files by default, but scan all directories.
+*
+!*/
+
+# Do not ignore git files in the root of the repo.
+!/.git*
+
+# Do not ignore current project's `.uproject`.
+!/*.uproject
+
+# Do not ignore source, config and plugins dirs.
+!/Source/**
+!/Config/**
+!/Plugins/**
+
+# Only allow .uasset and .umap files from /Content dir.
+# They're tracked by git-lfs, don't forget to track other
+# files if adding them here.
+!/Content/**/*.uasset
+!/Content/**/*.umap
+
+# Allow any files from /RawContent dir.
+# Any file in /RawContent dir will be managed by git lfs.
+!/RawContent/**/*
+
+# OS/platform generated files.
+
+# Windows
+ehthumbs.db
+Thumbs.db
+
+# Mac OS X
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Visual Studio
+.vs
+/Source/UI_Udemy/UI_UdemyCharacter.cpp
+/Source/UI_Udemy/UI_UdemyCharacter.h
+/Source/UI_Udemy/UI_UdemyGameMode.cpp
+/Source/UI_Udemy/UI_UdemyGameMode.h
+/Source/UI_Udemy/UI_UdemyPlayerController.cpp
+/Source/UI_Udemy/UI_UdemyPlayerController.h
+/Source/UI_Udemy/Variant_Combat/AI/CombatAIController.cpp
+/Source/UI_Udemy/Variant_Combat/AI/CombatAIController.h
+/Source/UI_Udemy/Variant_Combat/AI/CombatEnemy.cpp
+/Source/UI_Udemy/Variant_Combat/AI/CombatEnemy.h
+/Source/UI_Udemy/Variant_Combat/AI/CombatEnemySpawner.cpp
+/Source/UI_Udemy/Variant_Combat/AI/CombatEnemySpawner.h
+/Source/UI_Udemy/Variant_Combat/AI/CombatStateTreeUtility.cpp
+/Source/UI_Udemy/Variant_Combat/AI/CombatStateTreeUtility.h
+/Source/UI_Udemy/Variant_Combat/AI/EnvQueryContext_Player.cpp
+/Source/UI_Udemy/Variant_Combat/AI/EnvQueryContext_Player.h
+/Source/UI_Udemy/Variant_Combat/AnimNotify_CheckChargedAttack.cpp
+/Source/UI_Udemy/Variant_Combat/AnimNotify_CheckChargedAttack.h
+/Source/UI_Udemy/Variant_Combat/AnimNotify_CheckCombo.cpp
+/Source/UI_Udemy/Variant_Combat/AnimNotify_CheckCombo.h
+/Source/UI_Udemy/Variant_Combat/AnimNotify_DoAttackTrace.cpp
+/Source/UI_Udemy/Variant_Combat/AnimNotify_DoAttackTrace.h
+/Source/UI_Udemy/Variant_Combat/CombatActivatable.cpp
+/Source/UI_Udemy/Variant_Combat/CombatActivatable.h
+/Source/UI_Udemy/Variant_Combat/CombatActivationVolume.cpp
+/Source/UI_Udemy/Variant_Combat/CombatActivationVolume.h
+/Source/UI_Udemy/Variant_Combat/CombatAttacker.cpp
+/Source/UI_Udemy/Variant_Combat/CombatAttacker.h
+/Source/UI_Udemy/Variant_Combat/CombatCharacter.cpp
+/Source/UI_Udemy/Variant_Combat/CombatCharacter.h
+/Source/UI_Udemy/Variant_Combat/CombatCheckpointVolume.cpp
+/Source/UI_Udemy/Variant_Combat/CombatCheckpointVolume.h
+/Source/UI_Udemy/Variant_Combat/CombatDamageable.cpp
+/Source/UI_Udemy/Variant_Combat/CombatDamageable.h
+/Source/UI_Udemy/Variant_Combat/CombatDamageableBox.cpp
+/Source/UI_Udemy/Variant_Combat/CombatDamageableBox.h
+/Source/UI_Udemy/Variant_Combat/CombatDummy.cpp
+/Source/UI_Udemy/Variant_Combat/CombatDummy.h
+/Source/UI_Udemy/Variant_Combat/CombatGameMode.cpp
+/Source/UI_Udemy/Variant_Combat/CombatGameMode.h
+/Source/UI_Udemy/Variant_Combat/CombatLavaFloor.cpp
+/Source/UI_Udemy/Variant_Combat/CombatLavaFloor.h
+/Source/UI_Udemy/Variant_Combat/CombatLifeBar.cpp
+/Source/UI_Udemy/Variant_Combat/CombatLifeBar.h
+/Source/UI_Udemy/Variant_Combat/CombatPlayerController.cpp
+/Source/UI_Udemy/Variant_Combat/CombatPlayerController.h
+/Source/UI_Udemy/Variant_Platforming/AnimNotify_EndDash.cpp
+/Source/UI_Udemy/Variant_Platforming/AnimNotify_EndDash.h
+/Source/UI_Udemy/Variant_Platforming/PlatformingCharacter.cpp
+/Source/UI_Udemy/Variant_Platforming/PlatformingCharacter.h
+/Source/UI_Udemy/Variant_Platforming/PlatformingGameMode.cpp
+/Source/UI_Udemy/Variant_Platforming/PlatformingGameMode.h
+/Source/UI_Udemy/Variant_Platforming/PlatformingPlayerController.cpp
+/Source/UI_Udemy/Variant_Platforming/PlatformingPlayerController.h
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingAIController.cpp
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingAIController.h
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingNPC.cpp
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingNPC.h
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingStateTreeUtility.cpp
+/Source/UI_Udemy/Variant_SideScrolling/AI/SideScrollingStateTreeUtility.h
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingJumpPad.cpp
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingJumpPad.h
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingMovingPlatform.cpp
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingMovingPlatform.h
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingPickup.cpp
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingPickup.h
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingSoftPlatform.cpp
+/Source/UI_Udemy/Variant_SideScrolling/Gameplay/SideScrollingSoftPlatform.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingCPP.Build.cs
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingCameraManager.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingCameraManager.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingCharacter.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingCharacter.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingGameMode.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingGameMode.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingInteractable.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingInteractable.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingPlayerController.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingPlayerController.h
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingUI.cpp
+/Source/UI_Udemy/Variant_SideScrolling/SideScrollingUI.h
+/Input/Actions/IA_Drop.uasset
+/Input/Actions/IA_Interact.uasset
+/Input/Actions/IA_Mover.uasset
+/Input/BPI_TouchInterface_SideScrolling.uasset
+/Input/IMC_SideScroller.uasset
+/Input/UI_TouchInterface_SideScrolling.uasset
+/Lvl_SideScrolling.umap
+/Input/Actions/IA_Drop.uasset
+/Input/Actions/IA_Interact.uasset
+/Input/Actions/IA_Mover.uasset
+/Input/BPI_TouchInterface_SideScrolling.uasset
+/Input/IMC_SideScroller.uasset
+/Input/UI_TouchInterface_SideScrolling.uasset
+/Lvl_SideScrolling.umap
